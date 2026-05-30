@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>sports4all</title>
+
+  <link rel="preconnect" href="https://unpkg.com" />
+  <link rel="stylesheet" href="https://unpkg.com/phosphor-icons@1.4.2/src/css/phosphor.css"/>
+
+  <meta name="description" content="sports4all is a volunteer-led community sports initiative for underprivileged kids."/>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,600;0,9..40,700;1,9..40,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header class="topbar" aria-label="Mobile header">
+    <button class="iconbtn" id="navToggle" aria-label="Open navigation" aria-expanded="false">
+      <i class="ph ph-list"></i>
+    </button>
+
+    <a class="brand" href="#home" data-route="home">
+      <span class="brandMark">sports<span class="brandAccent">4</span>all</span>
+    </a>
+
+    <a class="iconbtn" href="#donate" data-route="donate" aria-label="Donate">
+      <i class="ph ph-heart"></i>
+    </a>
+  </header>
+
+  <div class="appShell">
+    <aside class="sideNav" id="sideNav" aria-label="Primary navigation">
+      <a class="navItem isActive" href="#home" data-route="home">
+        <i class="ph ph-house"></i><span>home</span>
+      </a>
+      <a class="navItem" href="#events" data-route="events">
+        <i class="ph ph-calendar"></i><span>events</span>
+      </a>
+      <a class="navItem" href="#about" data-route="about">
+        <i class="ph ph-user"></i><span>about</span>
+      </a>
+      <a class="navItem" href="#donate" data-route="donate">
+        <i class="ph ph-heart"></i><span>donate</span>
+      </a>
+
+      <div class="sideNavFooter">
+        <a class="miniLink" href="#contact" data-route="contact">
+          <i class="ph ph-chat-circle-dots"></i><span>contact</span>
+        </a>
+      </div>
+    </aside>
+
+    <main class="main">
+      <section class="section" id="home" data-page="home" aria-label="Home">
+        <div class="heroWrap">
+          <div class="heroMedia heroWide" role="img" aria-label="Community sports moment">
+            <img
+              src="https://images.unsplash.com/photo-1521412644187-c49fa049e84d?auto=format&fit=crop&w=1800&q=80"
+              alt="Community sports moment"
+              loading="eager"
+            />
+            <div class="heroOverlay">
+              <div class="heroTitle">
+                <p class="heroBadge">volunteer-led · community sports</p>
+                <h1>sports4all</h1>
+                <p>
+                  Volunteer-led sports experiences for underprivileged kids, building confidence,
+                  community, and life skills through tennis, ping pong, and golf.
+                </p>
+
+                <div class="heroCtas">
+                  <a class="btn primary" href="#donate" data-route="donate">Donate</a>
+                  <a class="btn ghost" href="#events" data-route="events">See Events</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="socialRow" aria-label="Social links">
+            <a class="social" href="#" aria-label="Instagram"><i class="ph ph-instagram-logo"></i></a>
+            <a class="social" href="#" aria-label="YouTube"><i class="ph ph-youtube-logo"></i></a>
+            <a class="social" href="#" aria-label="TikTok"><i class="ph ph-tiktok-logo"></i></a>
+            <a class="social" href="#" aria-label="Twitter/X"><i class="ph ph-x-logo"></i></a>
+          </div>
+        </div>
+
+        <div class="sportStrip" aria-label="Sports we teach">
+          <article class="sportCard sportCard--tennis">
+            <h3>Tennis</h3>
+            <p>Footwork, focus, and fun on the court</p>
+          </article>
+          <article class="sportCard sportCard--ping">
+            <h3>Ping Pong</h3>
+            <p>Quick reflexes and steady improvement</p>
+          </article>
+          <article class="sportCard sportCard--golf">
+            <h3>Golf</h3>
+            <p>Patience, precision, and pride</p>
+          </article>
+        </div>
+
+        <div class="impactBand" aria-label="Impact highlights">
+          <div class="impactItem">
+            <span class="impactNum">3</span>
+            <span class="impactLabel">sports taught</span>
+          </div>
+          <div class="impactItem">
+            <span class="impactNum">100%</span>
+            <span class="impactLabel">volunteer-led</span>
+          </div>
+          <div class="impactItem">
+            <span class="impactNum">—</span>
+            <span class="impactLabel">community first</span>
+          </div>
+        </div>
+
+        <div class="contentGrid single">
+          <article class="callout calloutMission" aria-labelledby="mission-heading">
+            <p class="calloutEyebrow">why we exist</p>
+            <h2 class="calloutTitle" id="mission-heading">our mission</h2>
+            <p class="calloutLead">
+              We founded sports4all because we believe sport should be for everyone—not only kids who
+              already have access to coaches, equipment, and programs.
+            </p>
+            <p class="calloutBody">
+              Every child deserves the chance to learn, compete, and feel proud of what they can do. We run
+              welcoming, hands-on sessions in <strong>tennis</strong>, <strong>ping pong</strong>, and
+              <strong>golf</strong> where underprivileged youth build real skills, grow in confidence, and
+              carry lessons from the court into school, friendships, and everyday life.
+            </p>
+            <ul class="calloutList">
+              <li>Free, volunteer-led instruction focused on fundamentals and fun</li>
+              <li>A supportive environment where effort and improvement matter</li>
+              <li>Mentorship that helps kids build habits beyond sports</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" id="events" data-page="events" aria-label="Events">
+        <div class="pageHeader">
+          <h2 class="pageTitle pageTitle--events">events</h2>
+          <p>We'll post our schedule here as soon as events are announced.</p>
+        </div>
+
+        <div class="panel">
+          <div class="calendarHeader">
+            <div>
+              <h3 class="calendarTitle">Upcoming Events</h3>
+              <p class="small">No events scheduled yet. Check back soon.</p>
+            </div>
+          </div>
+
+          <div class="calendarGrid" aria-label="Empty calendar">
+            <div class="calDow">Sun</div><div class="calDow">Mon</div><div class="calDow">Tue</div><div class="calDow">Wed</div><div class="calDow">Thu</div><div class="calDow">Fri</div><div class="calDow">Sat</div>
+
+            <div class="calCell"></div><div class="calCell"></div><div class="calCell"></div><div class="calCell"></div><div class="calCell"></div><div class="calCell"></div><div class="calCell"></div>
+            <div class="calCell"></div><div class="calCell"></div><div class="calCell"></div><div class="calCell"></div><div class="calCell"></div><div class="calCell"></div><div class="calCell"></div>
+            <div class="calCell"></div><div class="calCell"></div><div class="calCell"></div><div class="calCell"></div><div class="calCell"></div><div class="calCell"></div><div class="calCell"></div>
+            <div class="calCell"></div><div class="calCell"></div><div class="calCell"></div><div class="calCell"></div><div class="calCell"></div><div class="calCell"></div><div class="calCell"></div>
+            <div class="calCell"></div><div class="calCell"></div><div class="calCell"></div><div class="calCell"></div><div class="calCell"></div><div class="calCell"></div><div class="calCell"></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="about" data-page="about" aria-label="About">
+        <div class="pageHeader">
+          <h2 class="pageTitle pageTitle--about">about</h2>
+          <p>Meet the people behind sports4all.</p>
+        </div>
+
+        <div class="aboutGrid">
+          <article class="aboutCard">
+            <div class="aboutPhoto">
+              <img src="https://i.imgur.com/yeLRayG.jpeg" alt="Nikhil Anand" loading="lazy" />
+            </div>
+            <div class="aboutBody">
+              <h3>Nikhil Anand</h3>
+              <p class="roleLabel">Co-Founder</p>
+              <p class="bioText">
+                Nikhil Anand is a dedicated student-athlete and mentor with a strong passion for giving back through sports.
+                As a recruitable Division I athlete with a perfect GPA, he understands the discipline, consistency, and mindset
+                it takes to develop both on and off the court. He's committed to sharing the lessons he's learned through athletics
+                with kids in his community, helping them build confidence, character, and lifelong habits through sport.
+                Nikhil is grateful for the opportunity to co-found sports4all and create a positive environment where kids can learn,
+                grow, and feel supported.
+              </p>
+            </div>
+          </article>
+
+          <article class="aboutCard">
+            <div class="aboutPhoto">
+              <img src="https://i.imgur.com/KxbtZGm.jpeg" alt="Rainer Schmitz" loading="lazy" />
+            </div>
+            <div class="aboutBody">
+              <h3>Rainer Schmitz</h3>
+              <p class="roleLabel">Co-Founder</p>
+              <p class="bioText">
+                Rainer Schmitz is a dedicated teacher and learner of life sports. With a strong athletic background of being a
+                4 star athlete with multiple D1 scholarship opportunities, he understands what it takes to master a sport.
+                He is committed to passing on his knowledge and learning from the kids within his community. Throughout his high school
+                career, on top of maintaining a 4.0 GPA, he has played in tournaments including the Pan-American Championships and won many
+                national level tournaments. He finds joy in teaching and learning from others and is grateful to have the opportunity to found
+                this non-profit.
+              </p>
+            </div>
+          </article>
+        </div>
+
+        <article class="callout calloutPromise" aria-labelledby="promise-heading">
+          <p class="calloutEyebrow calloutEyebrowDark">our commitment</p>
+          <h2 class="calloutTitle calloutTitleDark" id="promise-heading">our promise</h2>
+          <p class="calloutLead calloutLeadDark">
+            To every kid—and every family—we serve, our promise is straightforward:
+          </p>
+          <ul class="promiseList">
+            <li>
+              <strong>We show up.</strong> With our skills, our time, and the experience we've gained as athletes and mentors.
+            </li>
+            <li>
+              <strong>We lead with patience.</strong> Encouraging effort, celebrating progress, and helping kids believe in themselves.
+            </li>
+            <li>
+              <strong>We build a safe space.</strong> Where every child feels respected, supported, and motivated to keep improving.
+            </li>
+          </ul>
+          <p class="calloutBody calloutBodyDark">
+            Sport is how we connect—but character, confidence, and consistency are what we hope every child takes home.
+          </p>
+        </article>
+      </section>
+
+      <section class="section" id="donate" data-page="donate" aria-label="Donate">
+        <div class="pageHeader center">
+          <h2 class="pageTitle pageTitle--donate">donate</h2>
+          <p>Support sports4all through a secure Stripe donation page.</p>
+        </div>
+        <div class="donateWrap single">
+          <form class="donateBox" id="donateForm">
+            <div class="donateHeader">
+              <h3 class="sectionTitle">choose amount</h3>
+              <p>You'll complete your donation securely through Stripe.</p>
+            </div>
+
+            <div class="amountRow" role="group" aria-label="Preset donation amounts">
+              <button type="button" class="chip" data-amt="5">$5</button>
+              <button type="button" class="chip" data-amt="10">$10</button>
+              <button type="button" class="chip isSelected" data-amt="25">$25</button>
+              <button type="button" class="chip" data-amt="50">$50</button>
+              <button type="button" class="chip" data-amt="100">$100</button>
+            </div>
+
+            <label class="field">
+              <span>Custom amount</span>
+              <div class="inputWrap">
+                <span class="prefix">$</span>
+                <input id="customAmount" inputmode="numeric" autocomplete="off" placeholder="Enter amount" />
+              </div>
+            </label>
+
+            <div class="divider"></div>
+
+            <div class="goalBlock">
+              <div class="goalTop">
+                <div>
+                  <h3 class="goalTitle">Goal of the month</h3>
+                  <p>Goal: <strong>$500</strong></p>
+                </div>
+                <div class="goalNumbers">
+                  <span class="bigMoney" id="raisedLabel">$0</span>
+                  <span>of <span id="goalLabel">$500</span></span>
+                </div>
+              </div>
+
+              <div class="progress" role="progressbar" aria-valuemin="0" aria-valuemax="500" aria-valuenow="0" aria-label="Monthly goal progress">
+                <div class="bar" id="goalBar"></div>
+              </div>
+
+              <div class="goalBottom">
+                <span><span id="percentLabel">0%</span> complete</span>
+                <span id="remainingLabel">$500 to go</span>
+              </div>
+            </div>
+
+            <div class="divider"></div>
+
+            <button class="btn primary wide" type="submit" id="donateBtn">
+              Donate $25 <i class="ph ph-arrow-right"></i>
+            </button>
+          </form>
+        </div>
+      </section>
+
+      <section class="section sectionContact" id="contact" data-page="contact" aria-label="Contact">
+        <div class="contactIntro callout calloutContact">
+          <p class="calloutEyebrow calloutEyebrowDark">get in touch</p>
+          <h2 class="pageTitle pageTitle--contact">contact</h2>
+          <p class="contactLead">
+            Questions about volunteering, partnerships, donations, or getting a child involved?
+            Reach out—we'd love to hear from you.
+          </p>
+        </div>
+
+        <div class="contactGrid">
+          <article class="contactCard">
+            <div class="contactCardHead">
+              <span class="contactIcon" aria-hidden="true"><i class="ph ph-user"></i></span>
+              <div>
+                <h3 class="contactName">Nikhil Anand</h3>
+                <p class="contactRole">Co-Founder</p>
+              </div>
+            </div>
+            <a class="contactLink" href="tel:2815621551">
+              <i class="ph ph-phone"></i> 281-562-1551
+            </a>
+            <a class="contactLink" href="mailto:nikhil.panand2@gmail.com">
+              <i class="ph ph-envelope"></i> nikhil.panand2@gmail.com
+            </a>
+          </article>
+
+          <article class="contactCard">
+            <div class="contactCardHead">
+              <span class="contactIcon" aria-hidden="true"><i class="ph ph-user"></i></span>
+              <div>
+                <h3 class="contactName">Rainer Schmitz</h3>
+                <p class="contactRole">Co-Founder</p>
+              </div>
+            </div>
+            <a class="contactLink" href="tel:8325604261">
+              <i class="ph ph-phone"></i> 832-560-4261
+            </a>
+            <a class="contactLink" href="mailto:rainerschmitz18@gmail.com">
+              <i class="ph ph-envelope"></i> rainerschmitz18@gmail.com
+            </a>
+          </article>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
