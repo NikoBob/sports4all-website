@@ -25,8 +25,8 @@
       <span class="brandMark">sports<span class="brandAccent">4</span>all</span>
     </a>
 
-    <a class="iconbtn" href="#donate" data-route="donate" aria-label="Donate">
-      <i class="ph ph-heart"></i>
+    <a class="iconbtn" href="#contact" data-route="contact" aria-label="Contact">
+      <i class="ph ph-chat-circle-dots"></i>
     </a>
   </header>
 
@@ -41,10 +41,6 @@
       <a class="navItem" href="#about" data-route="about">
         <i class="ph ph-user"></i><span>about</span>
       </a>
-      <a class="navItem" href="#donate" data-route="donate">
-        <i class="ph ph-heart"></i><span>donate</span>
-      </a>
-
       <div class="sideNavFooter">
         <a class="miniLink" href="#contact" data-route="contact">
           <i class="ph ph-chat-circle-dots"></i><span>contact</span>
@@ -71,8 +67,8 @@
                 </p>
 
                 <div class="heroCtas">
-                  <a class="btn primary" href="#donate" data-route="donate">Donate</a>
-                  <a class="btn ghost" href="#events" data-route="events">See Events</a>
+                  <a class="btn primary" href="#events" data-route="events">See Events</a>
+                  <a class="btn ghost" href="#contact" data-route="contact">Contact Us</a>
                 </div>
               </div>
             </div>
@@ -232,73 +228,12 @@
         </article>
       </section>
 
-      <section class="section" id="donate" data-page="donate" aria-label="Donate">
-        <div class="pageHeader center">
-          <h2 class="pageTitle pageTitle--donate">donate</h2>
-          <p>Support sports4all through a secure Stripe donation page.</p>
-        </div>
-        <div class="donateWrap single">
-          <form class="donateBox" id="donateForm">
-            <div class="donateHeader">
-              <h3 class="sectionTitle">choose amount</h3>
-              <p>You'll complete your donation securely through Stripe.</p>
-            </div>
-
-            <div class="amountRow" role="group" aria-label="Preset donation amounts">
-              <button type="button" class="chip" data-amt="5">$5</button>
-              <button type="button" class="chip" data-amt="10">$10</button>
-              <button type="button" class="chip isSelected" data-amt="25">$25</button>
-              <button type="button" class="chip" data-amt="50">$50</button>
-              <button type="button" class="chip" data-amt="100">$100</button>
-            </div>
-
-            <label class="field">
-              <span>Custom amount</span>
-              <div class="inputWrap">
-                <span class="prefix">$</span>
-                <input id="customAmount" inputmode="numeric" autocomplete="off" placeholder="Enter amount" />
-              </div>
-            </label>
-
-            <div class="divider"></div>
-
-            <div class="goalBlock">
-              <div class="goalTop">
-                <div>
-                  <h3 class="goalTitle">Goal of the month</h3>
-                  <p>Goal: <strong>$500</strong></p>
-                </div>
-                <div class="goalNumbers">
-                  <span class="bigMoney" id="raisedLabel">$0</span>
-                  <span>of <span id="goalLabel">$500</span></span>
-                </div>
-              </div>
-
-              <div class="progress" role="progressbar" aria-valuemin="0" aria-valuemax="500" aria-valuenow="0" aria-label="Monthly goal progress">
-                <div class="bar" id="goalBar"></div>
-              </div>
-
-              <div class="goalBottom">
-                <span><span id="percentLabel">0%</span> complete</span>
-                <span id="remainingLabel">$500 to go</span>
-              </div>
-            </div>
-
-            <div class="divider"></div>
-
-            <button class="btn primary wide" type="submit" id="donateBtn">
-              Donate $25 <i class="ph ph-arrow-right"></i>
-            </button>
-          </form>
-        </div>
-      </section>
-
       <section class="section sectionContact" id="contact" data-page="contact" aria-label="Contact">
         <div class="contactIntro callout calloutContact">
           <p class="calloutEyebrow calloutEyebrowDark">get in touch</p>
           <h2 class="pageTitle pageTitle--contact">contact</h2>
           <p class="contactLead">
-            Questions about volunteering, partnerships, donations, or getting a child involved?
+            Questions about volunteering, partnerships, or getting a child involved?
             Reach out—we'd love to hear from you.
           </p>
         </div>

@@ -57,10 +57,7 @@ img{ display: block; max-width: 100%; }
 .heroTitle p,
 .bioText,
 .sportCard p,
-.donateHeader p,
 .calendarHeader p,
-.goalBottom span,
-.goalTop p,
 .contactLead,
 .calloutBody,
 .calloutBodyDark{
@@ -96,12 +93,6 @@ img{ display: block; max-width: 100%; }
   background: var(--white);
   cursor: pointer;
   color: var(--ink);
-}
-
-.iconbtn[href*="donate"]{
-  background: var(--green);
-  border-color: var(--green);
-  color: var(--white);
 }
 
 .iconbtn i{ font-size: 20px; }
@@ -354,8 +345,7 @@ img{ display: block; max-width: 100%; }
 
 /* Unified text blocks */
 .panel,
-.callout,
-.donateBox{
+.callout{
   background: var(--white);
   border: 1px solid var(--line);
   border-radius: var(--radius);
@@ -549,120 +539,6 @@ img{ display: block; max-width: 100%; }
   border-radius: 8px;
   border: 1px solid var(--line);
   background: var(--surface);
-}
-
-/* Donate */
-.donateWrap{ max-width: 520px; margin: 0 auto; }
-
-.amountRow{
-  display: flex;
-  gap: 8px;
-  flex-wrap: wrap;
-  margin: 14px 0;
-}
-
-.chip{
-  height: 40px;
-  padding: 0 14px;
-  border-radius: 8px;
-  border: 1px solid var(--line);
-  background: var(--surface);
-  cursor: pointer;
-  font-weight: 700;
-  font-size: 15px;
-  color: var(--ink);
-  transition: background .15s ease, color .15s ease, border-color .15s ease;
-}
-
-.chip:hover{ background: var(--green-light); }
-
-.chip.isSelected{
-  background: var(--green);
-  border-color: var(--green);
-  color: var(--white);
-}
-
-.field{
-  display: block;
-  margin-top: 8px;
-  font-size: 15px;
-  font-weight: 700;
-}
-
-.inputWrap{
-  margin-top: 6px;
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  border: 1px solid var(--line);
-  border-radius: 10px;
-  padding: 11px 13px;
-  background: var(--surface);
-}
-
-.inputWrap:focus-within{
-  border-color: var(--green);
-  background: var(--white);
-}
-
-.inputWrap .prefix{ font-weight: 700; color: var(--green); }
-
-.inputWrap input{
-  border: none;
-  outline: none;
-  background: transparent;
-  width: 100%;
-  font-size: 15px;
-}
-
-.divider{
-  height: 1px;
-  background: var(--line);
-  margin: 14px 0;
-}
-
-.goalTop{
-  display: flex;
-  justify-content: space-between;
-  gap: 12px;
-}
-
-.goalTitle{
-  margin: 0;
-  font-size: 18px;
-  font-weight: 800;
-}
-
-.goalNumbers{ text-align: right; }
-
-.bigMoney{
-  font-weight: 900;
-  font-size: 24px;
-  display: block;
-  color: var(--green);
-}
-
-.progress{
-  height: 8px;
-  border-radius: 999px;
-  background: var(--surface);
-  overflow: hidden;
-  margin: 12px 0 8px;
-}
-
-.bar{
-  height: 100%;
-  width: 0%;
-  background: var(--green);
-  border-radius: 999px;
-  transition: width .4s ease;
-}
-
-.goalBottom{
-  display: flex;
-  justify-content: space-between;
-  font-size: 14px;
-  font-weight: 600;
 }
 
 /* Contact */
