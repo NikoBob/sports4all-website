@@ -220,37 +220,48 @@ img{ display: block; max-width: 100%; }
 }
 
 .heroMedia--logo{
-  background: var(--white);
-  min-height: auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  min-height: 540px;
+  background: linear-gradient(165deg, var(--green-light) 0%, var(--white) 42%, var(--bg) 100%);
 }
 
 .heroMedia--logo img{
+  position: absolute;
+  inset: 0;
   width: 100%;
-  max-width: 480px;
-  height: auto;
-  padding: 36px 28px 12px;
+  height: 100%;
+  max-width: none;
+  padding: 0;
   object-fit: contain;
+  object-position: center 36%;
 }
 
-.heroMedia--logo .heroContent{
-  width: 100%;
-  padding: 8px 28px 32px;
-  text-align: center;
+.heroOverlay--logo{
+  background: linear-gradient(
+    to top,
+    rgba(26,46,36,.93) 0%,
+    rgba(26,46,36,.82) 28%,
+    rgba(26,46,36,.35) 58%,
+    transparent 82%
+  );
+  align-items: flex-end;
+  padding: 32px;
 }
 
-.heroMedia--logo .heroLead{
-  margin: 0 auto 22px;
-  max-width: 58ch;
-  font-size: 17px;
-  line-height: 1.6;
-  color: var(--muted);
+.heroOverlay--logo .btn.ghost{
+  background: transparent;
+  color: var(--white);
+  border-color: rgba(255,255,255,.55);
 }
 
-.heroMedia--logo .heroCtas{
-  justify-content: center;
+.heroOverlay--logo .btn.ghost:hover{
+  background: rgba(255,255,255,.14);
+  color: var(--white);
+  border-color: rgba(255,255,255,.75);
+}
+
+.heroOverlay--logo .heroTitle h1,
+.heroOverlay--logo .heroTitle p{
+  text-shadow: 0 2px 16px rgba(0,0,0,.28);
 }
 
 .heroOverlay{
@@ -658,6 +669,7 @@ img{ display: block; max-width: 100%; }
 @media (max-width: 1100px){
   :root{ --navW: 210px; }
   .heroMedia:not(.heroMedia--logo) img{ height: 480px; }
+  .heroMedia--logo{ min-height: 480px; }
 }
 
 @media (max-width: 920px){
@@ -685,6 +697,7 @@ img{ display: block; max-width: 100%; }
   .sideNav.isOpen{ transform: translateY(0); }
 
   .heroMedia:not(.heroMedia--logo) img{ height: 400px; }
+  .heroMedia--logo{ min-height: 420px; }
   .aboutGrid{ grid-template-columns: 1fr; }
   .sportStrip{ grid-template-columns: 1fr; }
   .impactBand{ grid-template-columns: 1fr; gap: 16px; }
@@ -693,9 +706,10 @@ img{ display: block; max-width: 100%; }
 
 @media (max-width: 520px){
   .heroOverlay{ padding: 18px; }
+  .heroOverlay--logo{ padding: 20px 18px; }
   .heroMedia:not(.heroMedia--logo) img{ height: 340px; }
-  .heroMedia--logo img{ padding: 24px 18px 8px; }
-  .heroMedia--logo .heroContent{ padding: 8px 18px 24px; }
+  .heroMedia--logo{ min-height: 380px; }
+  .heroMedia--logo img{ object-position: center 32%; }
 }
 
 @media (prefers-reduced-motion: reduce){
