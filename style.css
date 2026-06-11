@@ -219,6 +219,40 @@ img{ display: block; max-width: 100%; }
   object-fit: cover;
 }
 
+.heroMedia--logo{
+  background: var(--white);
+  min-height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.heroMedia--logo img{
+  width: 100%;
+  max-width: 480px;
+  height: auto;
+  padding: 36px 28px 12px;
+  object-fit: contain;
+}
+
+.heroMedia--logo .heroContent{
+  width: 100%;
+  padding: 8px 28px 32px;
+  text-align: center;
+}
+
+.heroMedia--logo .heroLead{
+  margin: 0 auto 22px;
+  max-width: 58ch;
+  font-size: 17px;
+  line-height: 1.6;
+  color: var(--muted);
+}
+
+.heroMedia--logo .heroCtas{
+  justify-content: center;
+}
+
 .heroOverlay{
   position: absolute;
   inset: 0;
@@ -623,7 +657,7 @@ img{ display: block; max-width: 100%; }
 /* Responsive */
 @media (max-width: 1100px){
   :root{ --navW: 210px; }
-  .heroMedia img{ height: 480px; }
+  .heroMedia:not(.heroMedia--logo) img{ height: 480px; }
 }
 
 @media (max-width: 920px){
@@ -650,7 +684,7 @@ img{ display: block; max-width: 100%; }
 
   .sideNav.isOpen{ transform: translateY(0); }
 
-  .heroMedia img{ height: 400px; }
+  .heroMedia:not(.heroMedia--logo) img{ height: 400px; }
   .aboutGrid{ grid-template-columns: 1fr; }
   .sportStrip{ grid-template-columns: 1fr; }
   .impactBand{ grid-template-columns: 1fr; gap: 16px; }
@@ -659,7 +693,9 @@ img{ display: block; max-width: 100%; }
 
 @media (max-width: 520px){
   .heroOverlay{ padding: 18px; }
-  .heroMedia img{ height: 340px; }
+  .heroMedia:not(.heroMedia--logo) img{ height: 340px; }
+  .heroMedia--logo img{ padding: 24px 18px 8px; }
+  .heroMedia--logo .heroContent{ padding: 8px 18px 24px; }
 }
 
 @media (prefers-reduced-motion: reduce){
