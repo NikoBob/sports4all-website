@@ -46,6 +46,8 @@ img{ display: block; max-width: 100%; }
   color: var(--ink);
 }
 
+.calloutTitle--caps{ text-transform: none; }
+
 .sectionTitle{ font-size: 24px; margin-bottom: 10px; }
 
 .brandMark{ font-weight: 800; font-size: 18px; color: var(--ink); }
@@ -220,7 +222,7 @@ img{ display: block; max-width: 100%; }
 }
 
 .heroMedia--logo{
-  min-height: 540px;
+  min-height: 660px;
   background: linear-gradient(165deg, var(--green-light) 0%, var(--white) 42%, var(--bg) 100%);
 }
 
@@ -232,7 +234,9 @@ img{ display: block; max-width: 100%; }
   max-width: none;
   padding: 0;
   object-fit: contain;
-  object-position: center 36%;
+  object-position: center 28%;
+  transform: scale(1.32);
+  transform-origin: center 28%;
 }
 
 .heroOverlay--logo{
@@ -557,6 +561,25 @@ img{ display: block; max-width: 100%; }
 }
 
 /* Events */
+.calendarRow{
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.calendarPanel{
+  border-left-color: var(--green);
+}
+
+.calMonthLabel{
+  margin: 0 0 14px;
+  font-size: 16px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: .06em;
+  color: var(--green);
+}
+
 .calendarHeader{ margin-bottom: 12px; }
 
 .calendarTitle{
@@ -568,22 +591,136 @@ img{ display: block; max-width: 100%; }
 .calendarGrid{
   display: grid;
   grid-template-columns: repeat(7, minmax(0, 1fr));
-  gap: 6px;
+  gap: 5px;
 }
 
 .calDow{
-  font-size: 12px;
+  font-size: 11px;
   font-weight: 700;
   text-align: center;
   color: var(--green);
-  padding: 6px;
+  padding: 5px 3px;
+  text-transform: uppercase;
+  letter-spacing: .04em;
 }
 
 .calCell{
-  height: 48px;
-  border-radius: 8px;
+  height: 36px;
+  border-radius: 6px;
   border: 1px solid var(--line);
   background: var(--surface);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--ink);
+}
+
+.calEmpty{
+  background: transparent;
+  border-color: transparent;
+}
+
+.calCell.calEvent{
+  background: var(--green);
+  border-color: var(--green);
+  color: #fff;
+  font-weight: 800;
+}
+
+.calLegend{
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  margin: 12px 0 0;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--muted);
+}
+
+.calLegendDot{
+  width: 12px;
+  height: 12px;
+  border-radius: 3px;
+  background: var(--green);
+  flex-shrink: 0;
+}
+
+/* Event listing card */
+.eventCard{
+  display: flex;
+  border-radius: var(--radius);
+  overflow: hidden;
+  background: var(--white);
+  border: 1px solid var(--line);
+  box-shadow: var(--shadow-sm);
+  margin-bottom: 20px;
+}
+
+.eventCardAccent{
+  width: 6px;
+  flex-shrink: 0;
+  background: var(--green);
+}
+
+.eventCardBody{
+  display: flex;
+  gap: 24px;
+  padding: 22px 24px;
+  flex: 1;
+  flex-wrap: wrap;
+}
+
+.eventCardMain{
+  flex: 1;
+  min-width: 200px;
+}
+
+.eventTag{
+  margin: 0 0 6px;
+  font-size: 11px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: .08em;
+  color: var(--green);
+}
+
+.eventName{
+  margin: 0 0 8px;
+  font-size: 20px;
+  font-weight: 800;
+  color: var(--ink);
+}
+
+.eventDesc{
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.65;
+  color: var(--muted);
+}
+
+.eventCardMeta{
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  justify-content: center;
+  min-width: 200px;
+}
+
+.eventMetaItem{
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--ink);
+}
+
+.eventMetaItem i{
+  font-size: 16px;
+  color: var(--green);
+  flex-shrink: 0;
 }
 
 /* Contact */
@@ -669,7 +806,8 @@ img{ display: block; max-width: 100%; }
 @media (max-width: 1100px){
   :root{ --navW: 210px; }
   .heroMedia:not(.heroMedia--logo) img{ height: 480px; }
-  .heroMedia--logo{ min-height: 480px; }
+  .heroMedia--logo{ min-height: 580px; }
+  .heroMedia--logo img{ transform: scale(1.24); }
 }
 
 @media (max-width: 920px){
@@ -697,19 +835,22 @@ img{ display: block; max-width: 100%; }
   .sideNav.isOpen{ transform: translateY(0); }
 
   .heroMedia:not(.heroMedia--logo) img{ height: 400px; }
-  .heroMedia--logo{ min-height: 420px; }
+  .heroMedia--logo{ min-height: 500px; }
+  .heroMedia--logo img{ transform: scale(1.16); transform-origin: center 26%; }
   .aboutGrid{ grid-template-columns: 1fr; }
   .sportStrip{ grid-template-columns: 1fr; }
   .impactBand{ grid-template-columns: 1fr; gap: 16px; }
   .contactGrid{ grid-template-columns: 1fr; }
+  .calendarRow{ grid-template-columns: 1fr; }
+  .eventCardBody{ flex-direction: column; gap: 16px; }
 }
 
 @media (max-width: 520px){
   .heroOverlay{ padding: 18px; }
   .heroOverlay--logo{ padding: 20px 18px; }
   .heroMedia:not(.heroMedia--logo) img{ height: 340px; }
-  .heroMedia--logo{ min-height: 380px; }
-  .heroMedia--logo img{ object-position: center 32%; }
+  .heroMedia--logo{ min-height: 440px; }
+  .heroMedia--logo img{ transform: scale(1.1); object-position: center 26%; transform-origin: center 26%; }
 }
 
 @media (prefers-reduced-motion: reduce){

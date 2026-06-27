@@ -117,7 +117,7 @@
         <div class="contentGrid single">
           <article class="callout calloutMission" aria-labelledby="mission-heading">
             <p class="calloutEyebrow">why we exist</p>
-            <h2 class="calloutTitle" id="mission-heading">our mission</h2>
+            <h2 class="calloutTitle calloutTitle--caps" id="mission-heading">Our Mission</h2>
             <p class="calloutLead">
               We founded lifesports4all because we believe sport should be for everyone—not only kids who
               already have access to coaches, equipment, and programs.
@@ -140,26 +140,143 @@
       <section class="section" id="events" data-page="events" aria-label="Events">
         <div class="pageHeader">
           <h2 class="pageTitle pageTitle--events">events</h2>
-          <p>We'll post our schedule here as soon as events are announced.</p>
+          <p>Upcoming sessions open to all kids ages 4–14. No registration required.</p>
         </div>
 
-        <div class="panel">
-          <div class="calendarHeader">
-            <div>
-              <h3 class="calendarTitle">Upcoming Events</h3>
-              <p class="small">No events scheduled yet. Check back soon.</p>
+        <!-- Event listing card -->
+        <article class="eventCard">
+          <div class="eventCardAccent" aria-hidden="true"></div>
+          <div class="eventCardBody">
+            <div class="eventCardMain">
+              <p class="eventTag">Weekly · Tennis</p>
+              <h3 class="eventName">Sunday Tennis Sessions</h3>
+              <p class="eventDesc">
+                Free, volunteer-led tennis instruction in a fun and supportive environment.
+                Open to beginners and developing players alike — all equipment provided.
+              </p>
+            </div>
+            <div class="eventCardMeta">
+              <div class="eventMetaItem">
+                <i class="ph ph-map-pin"></i>
+                <span>Willcrest Tennis Club</span>
+              </div>
+              <div class="eventMetaItem">
+                <i class="ph ph-clock"></i>
+                <span>Sundays, 2:00 – 3:30 PM</span>
+              </div>
+              <div class="eventMetaItem">
+                <i class="ph ph-user"></i>
+                <span>Ages 4 – 14</span>
+              </div>
+              <div class="eventMetaItem">
+                <i class="ph ph-calendar-check"></i>
+                <span>June 28 – July 27, 2026</span>
+              </div>
             </div>
           </div>
+        </article>
 
-          <div class="calendarGrid" aria-label="Empty calendar">
-            <div class="calDow">Sun</div><div class="calDow">Mon</div><div class="calDow">Tue</div><div class="calDow">Wed</div><div class="calDow">Thu</div><div class="calDow">Fri</div><div class="calDow">Sat</div>
+        <!-- Calendars -->
+        <div class="calendarRow">
 
-            <div class="calCell"></div><div class="calCell"></div><div class="calCell"></div><div class="calCell"></div><div class="calCell"></div><div class="calCell"></div><div class="calCell"></div>
-            <div class="calCell"></div><div class="calCell"></div><div class="calCell"></div><div class="calCell"></div><div class="calCell"></div><div class="calCell"></div><div class="calCell"></div>
-            <div class="calCell"></div><div class="calCell"></div><div class="calCell"></div><div class="calCell"></div><div class="calCell"></div><div class="calCell"></div><div class="calCell"></div>
-            <div class="calCell"></div><div class="calCell"></div><div class="calCell"></div><div class="calCell"></div><div class="calCell"></div><div class="calCell"></div><div class="calCell"></div>
-            <div class="calCell"></div><div class="calCell"></div><div class="calCell"></div><div class="calCell"></div><div class="calCell"></div><div class="calCell"></div><div class="calCell"></div>
+          <!-- June 2026 — starts Monday, event on Sun Jun 28 only -->
+          <div class="panel calendarPanel">
+            <h3 class="calMonthLabel">June 2026</h3>
+            <div class="calendarGrid">
+              <div class="calDow">Sun</div><div class="calDow">Mon</div><div class="calDow">Tue</div><div class="calDow">Wed</div><div class="calDow">Thu</div><div class="calDow">Fri</div><div class="calDow">Sat</div>
+              <!-- Week 1: Jun 1=Mon -->
+              <div class="calCell calEmpty"></div>
+              <div class="calCell"><span>1</span></div>
+              <div class="calCell"><span>2</span></div>
+              <div class="calCell"><span>3</span></div>
+              <div class="calCell"><span>4</span></div>
+              <div class="calCell"><span>5</span></div>
+              <div class="calCell"><span>6</span></div>
+              <!-- Week 2 -->
+              <div class="calCell"><span>7</span></div>
+              <div class="calCell"><span>8</span></div>
+              <div class="calCell"><span>9</span></div>
+              <div class="calCell"><span>10</span></div>
+              <div class="calCell"><span>11</span></div>
+              <div class="calCell"><span>12</span></div>
+              <div class="calCell"><span>13</span></div>
+              <!-- Week 3 -->
+              <div class="calCell"><span>14</span></div>
+              <div class="calCell"><span>15</span></div>
+              <div class="calCell"><span>16</span></div>
+              <div class="calCell"><span>17</span></div>
+              <div class="calCell"><span>18</span></div>
+              <div class="calCell"><span>19</span></div>
+              <div class="calCell"><span>20</span></div>
+              <!-- Week 4 -->
+              <div class="calCell"><span>21</span></div>
+              <div class="calCell"><span>22</span></div>
+              <div class="calCell"><span>23</span></div>
+              <div class="calCell"><span>24</span></div>
+              <div class="calCell"><span>25</span></div>
+              <div class="calCell"><span>26</span></div>
+              <div class="calCell"><span>27</span></div>
+              <!-- Week 5: Jun 28 = event Sunday -->
+              <div class="calCell calEvent" aria-label="Tennis session June 28"><span>28</span></div>
+              <div class="calCell"><span>29</span></div>
+              <div class="calCell"><span>30</span></div>
+              <div class="calCell calEmpty"></div>
+              <div class="calCell calEmpty"></div>
+              <div class="calCell calEmpty"></div>
+              <div class="calCell calEmpty"></div>
+            </div>
+            <p class="calLegend"><span class="calLegendDot"></span> Tennis session</p>
           </div>
+
+          <!-- July 2026 — starts Wednesday, events every Sunday -->
+          <div class="panel calendarPanel">
+            <h3 class="calMonthLabel">July 2026</h3>
+            <div class="calendarGrid">
+              <div class="calDow">Sun</div><div class="calDow">Mon</div><div class="calDow">Tue</div><div class="calDow">Wed</div><div class="calDow">Thu</div><div class="calDow">Fri</div><div class="calDow">Sat</div>
+              <!-- Week 1: Jul 1=Wed -->
+              <div class="calCell calEmpty"></div>
+              <div class="calCell calEmpty"></div>
+              <div class="calCell calEmpty"></div>
+              <div class="calCell"><span>1</span></div>
+              <div class="calCell"><span>2</span></div>
+              <div class="calCell"><span>3</span></div>
+              <div class="calCell"><span>4</span></div>
+              <!-- Week 2 -->
+              <div class="calCell calEvent" aria-label="Tennis session July 5"><span>5</span></div>
+              <div class="calCell"><span>6</span></div>
+              <div class="calCell"><span>7</span></div>
+              <div class="calCell"><span>8</span></div>
+              <div class="calCell"><span>9</span></div>
+              <div class="calCell"><span>10</span></div>
+              <div class="calCell"><span>11</span></div>
+              <!-- Week 3 -->
+              <div class="calCell calEvent" aria-label="Tennis session July 12"><span>12</span></div>
+              <div class="calCell"><span>13</span></div>
+              <div class="calCell"><span>14</span></div>
+              <div class="calCell"><span>15</span></div>
+              <div class="calCell"><span>16</span></div>
+              <div class="calCell"><span>17</span></div>
+              <div class="calCell"><span>18</span></div>
+              <!-- Week 4 -->
+              <div class="calCell calEvent" aria-label="Tennis session July 19"><span>19</span></div>
+              <div class="calCell"><span>20</span></div>
+              <div class="calCell"><span>21</span></div>
+              <div class="calCell"><span>22</span></div>
+              <div class="calCell"><span>23</span></div>
+              <div class="calCell"><span>24</span></div>
+              <div class="calCell"><span>25</span></div>
+              <!-- Week 5 -->
+              <div class="calCell calEvent" aria-label="Tennis session July 26"><span>26</span></div>
+              <div class="calCell"><span>27</span></div>
+              <div class="calCell"><span>28</span></div>
+              <div class="calCell"><span>29</span></div>
+              <div class="calCell"><span>30</span></div>
+              <div class="calCell"><span>31</span></div>
+              <div class="calCell calEmpty"></div>
+            </div>
+            <p class="calLegend"><span class="calLegendDot"></span> Tennis session</p>
+          </div>
+
         </div>
       </section>
 
