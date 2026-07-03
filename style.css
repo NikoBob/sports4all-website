@@ -567,6 +567,10 @@ img{ display: block; max-width: 100%; }
   gap: 16px;
 }
 
+.calendarRow--single{
+  grid-template-columns: minmax(0, 520px);
+}
+
 .calendarPanel{
   border-left-color: var(--green);
 }
